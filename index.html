@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Java Lab Book | Practical Programs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">J</div>
+      <div><strong>Java Lab Book</strong><small>BCA practical collection</small></div>
+    </div>
+    <div class="rail-label">LIBRARY</div>
+    <button class="nav-link active" id="allPrograms"><span>▦</span> All programs <b id="sideTotal">445</b></button>
+    <div class="rail-label">CATEGORIES</div>
+    <nav id="categoryNav" aria-label="Program categories"></nav>
+    <div class="sidebar-note"><strong>Quick note</strong><p>Use the search box to find a title, then open a program to view its code and run notes.</p></div>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PRACTICAL FILE / JAVA</p>
+        <div class="student-details">
+          <Strong>STUDENT DETAIL</Strong>
+    <p><strong>Name:</strong> Simran Sharma</p>
+    <p><strong>Roll No.:</strong> 7089/24</p>
+    <p><strong>Course:</strong> BCA 5th Semester</p>
+    <p><strong>College:</strong> Post Graduate Government College, Sector 11, Chandigarh</p>
+</div>
+
+<h1>Program Library</h1>
+        <!-- <h1>Program Library</h1> -->
+        <p class="subheading">A simple, searchable collection organised by syllabus category.</p>
+      </div>
+      <!-- <div class="top-mark">BCA · SEM V</div> -->
+    </header>
+
+    <section class="stats" aria-label="Project summary">
+      <div class="stat"><span>Program titles</span><strong id="totalPrograms">445</strong><small>From the submitted lists</small></div>
+      <div class="stat"><span>Categories</span><strong id="totalCategories">17</strong><small>SWINGS excluded</small></div>
+      <div class="stat"><span>Compiled status</span><strong id="compiledPrograms">430</strong><small>See report for exceptions</small></div>
+    </section>
+
+    <section class="browser">
+      <div class="list-pane">
+        <div class="pane-heading">
+          <div><h2>Browse programs</h2><p id="resultCount">Loading catalogue…</p></div>
+        </div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search by program name…" autocomplete="off"></div>
+        <div class="filter-row">
+          <select id="categoryFilter" aria-label="Filter category"><option value="">Every category</option></select>
+          <select id="statusFilter" aria-label="Filter status">
+            <option value="">All statuses</option><option value="Compiled">Compiled</option><option value="Legacy applet">Legacy applet</option>
+          </select>
+        </div>
+        <div id="programList" class="program-list"></div>
+      </div>
+
+      <article class="detail-pane" id="detailPane">
+        <div class="empty-state">
+          <div class="empty-icon">⌘</div>
+          <h2>Select a program</h2>
+          <p>Choose a title from the list to see its complete Java source and run notes here.</p>
+        </div>
+      </article>
+    </section>
+    <footer><span>Java Lab Book</span><span>Local website · Works without internet</span></footer>
+  </main>
+  <script src="programs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
